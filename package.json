@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "name": "ares.site",
+  "description": "Ares website",
+  "version": "0.0.0",
+  "author": "BADAPE",
+  "license": "MIT",
+  "main": "server.js",
+  "engines": {
+    "node": "10.6.0"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "sitemap": "node ./jobs/sitemap.js"
+  },
+  "dependencies": {
+    "@rebass/preset": "^4.0.5",
+    "basic-auth": "^2.0.1",
+    "contentful": "^7.11.3",
+    "contentful-resolve-response": "^1.1.4",
+    "dotenv": "^8.2.0",
+    "emotion-theming": "^10.0.27",
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "lru-cache": "^5.1.1",
+    "marked": "^0.8.0",
+    "morgan": "^1.9.1",
+    "next": "^9.1.6",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-markdown": "^4.2.2",
+    "rebass": "^3.2.2",
+    "styled-components": "^4.3.2",
+    "styled-jsx": "3.1.3",
+    "xmlbuilder": "^13.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

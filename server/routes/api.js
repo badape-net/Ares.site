@@ -33,7 +33,6 @@ router.use('/contentful', (req, res, next) => {
 });
 
 router.get('/contentful', (req, res) => {
-    console.log(req.queryObj);
 
     req.client.getEntries(req.queryObj)
     .then((response) => {

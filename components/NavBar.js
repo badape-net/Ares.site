@@ -11,9 +11,11 @@ const NavBar = styled(Base)`
 
 export default props => (
     <NavBar  {...props} px={2} color='white' bg='black' alignItems='center' verticalAlign="top"> 
-      <Text p={2} fontWeight='bold'>Ares</Text>
+      <Link variant='nav' href='/'>
+        Ares
+      </Link>
       <Box mx='auto' />
-      <Link variant='nav' href='#!'>
+      <Link variant='nav' href='/about'>
         About
       </Link>
       <Link variant='nav' href='/posts'>
